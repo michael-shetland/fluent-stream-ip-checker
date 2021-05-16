@@ -42,7 +42,7 @@ COPY --from=build /build/scripts/refresh-ipsets.sh /app/refresh-ipsets.sh
 RUN chmod +x /app/refresh-ipsets.sh
 
 # Setup cronjob
-RUN printf '0,15,30,45 * * * * /app/refresh-ipsets.sh\n' > /var/spool/cron/crontabs/root
+RUN printf '0,5,10,15,20,25,30,35,40,45,50,55 * * * * /app/refresh-ipsets.sh  > /dev/stdout\n' > /var/spool/cron/crontabs/root
 
 # Add Entrypoint Script
 ADD [".ci/entrypoint.sh", "/app/"]

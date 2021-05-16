@@ -5,6 +5,7 @@ set -e
 echo "Pulling latest FireHOL Blocked IPSets ..."
 currentPWD=$PWD
 cd /etc/firehol/ipsets
+git reset --hard # Need to reset, else pull may fail
 git pull
 cd $currentPWD
 
