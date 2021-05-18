@@ -15,3 +15,5 @@ cd $currentPWD
 # Save ipsets
 echo "Saving IPSets ..."
 ipset save -f /app/ipsets-backup
+
+echo "Refresh IPSets completed"

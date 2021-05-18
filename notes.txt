@@ -1,7 +1,6 @@
 # Execute Container
 docker run -it --privileged \
-	-v d:/personal/dev/fluent-stream/fluent-stream-ip-checker/data/ipsets-backup:/app/ipsets-backup \
-	-v d:/personal/dev/fluent-stream/fluent-stream-ip-checker/data/ipsets:/etc/firehol/ipsets \
+	-p 3000:3000 \
 	fluent-stream-ip-checker:local
 
 # IP that exists

@@ -38,11 +38,8 @@ COPY --from=build /build/scripts/update-ipsets.sh /usr/lib/firehol/update-ipsets
 RUN chmod +x /usr/lib/firehol/update-ipsets.sh
 
 # Add Refresh IP Sets Script
-COPY --from=build /build/scripts/refresh-ipsets.sh /app/refresh-ipsets.sh
-RUN chmod +x /app/refresh-ipsets.sh
-
-# Setup cronjob
-RUN printf '0,5,10,15,20,25,30,35,40,45,50,55 * * * * /app/refresh-ipsets.sh  > /dev/stdout\n' > /var/spool/cron/crontabs/root
+COPY --from=build /build/scripts/refresh-ipsets.sh /app/scripts/refresh-ipsets.sh
+RUN chmod +x /app/scripts/refresh-ipsets.sh
 
 # Add Entrypoint Script
 ADD [".ci/entrypoint.sh", "/app/"]

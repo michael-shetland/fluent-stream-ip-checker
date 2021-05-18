@@ -40,10 +40,7 @@ if [ ! -f "/etc/firehol/ipsets/initialized" ]; then
 fi
 
 # Refresh IPSets
-/app/refresh-ipsets.sh
-
-# Start cron
-service cron start
+/app/scripts/refresh-ipsets.sh
 
 # Start Application
 node /app/dist/main

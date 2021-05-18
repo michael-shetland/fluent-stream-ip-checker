@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { UtilsService } from './utils';
+import { UtilsService } from './utils.service';
 
 @Injectable()
 export class IpsetService {
