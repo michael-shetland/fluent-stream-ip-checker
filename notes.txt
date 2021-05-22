@@ -14,3 +14,4 @@ docker run -it --privileged \
 1 hour Wednesday (5/13)
 4 hours Sunday (5/16)
 2 hours Tuesday (5/18)
+2 hours Sunday (5/22)
