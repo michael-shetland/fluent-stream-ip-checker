@@ -1,9 +1,7 @@
 # IP Checker
-
-Servcie to check IP Address against FireHol Blocklist (http://iplists.firehol.org/)
+Service to check IP Address against FireHol Blocklist (http://iplists.firehol.org/)
 
 # Get Started
-
 Install Modules<br/>
 `npm install`<br/>
 <br/>
