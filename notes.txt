@@ -8,3 +8,9 @@ docker run -it --privileged \
 
 # IP that does NOT exist
 45.121.203.23
+
+
+# Worklog
+1 hour Wednesday (5/13)
+4 hours Sunday (5/16)
+2 hours Tuesday (5/18)

@@ -42,7 +42,7 @@ COPY --from=build /build/scripts/refresh-ipsets.sh /app/scripts/refresh-ipsets.s
 RUN chmod +x /app/scripts/refresh-ipsets.sh
 
 # Add Entrypoint Script
-ADD [".ci/entrypoint.sh", "/app/"]
+ADD [".ci/build/entrypoint.sh", "/app/"]
 RUN chmod +x /app/entrypoint.sh
 
 WORKDIR /app
